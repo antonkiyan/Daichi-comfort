@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Daichi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/PT Root UI_Medium.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/PT Root UI_Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__bar">
+        <a class="page-header__logo">
+          <img class="page-header__logo-img" src="img/daikin-logo.svg" alt="Daikin">
+        </a>
+        <nav class="page-header__main-nav  main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <span class="main-nav__item-name  main-nav__item-name--products">Продукты</span>
+              <ul class="main-nav__subnav-list  main-nav__subnav-list--products">
+                <li class="main-nav__subnav-item">
+                  <a class="main-nav__subnav-link  js-scroll-split" href="#split-cards">Сплит-системы</a>
+                </li>
+                <li class="main-nav__subnav-item">
+                  <a class="main-nav__subnav-link  js-scroll-mult" href="#multi-system">Мультисистемы</a>
+                </li>
+                <li class="main-nav__subnav-item">
+                  <a class="main-nav__subnav-link  js-scroll-aircleaner" href="#aircleaner">Очиститель воздуха</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link js-scroll-mobile-control" href="#mobile-control">Мобильное управление</a>
+            </li>
+            <li class="main-nav__item">
+              <span class="main-nav__item-name  main-nav__item-name--programs">Программы обслуживания</span>
+              <ul class="main-nav__subnav-list  main-nav__subnav-list--programs">
+                <li class="main-nav__subnav-item">
+                  <a class="main-nav__subnav-link  js-scroll-my-comfort" href="#my-comfort">«Мой комфорт+»</a>
+                </li>
+                <li class="main-nav__subnav-item">
+                  <a class="main-nav__subnav-link  js-scroll-climat-online" href="#climat-online">«Климат онлайн»</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <nav class="page-header__mobile-nav  mobile-nav">
+          <div class="mobile-nav__content">
+            <a class="mobile-nav__logo">
+              <img class="mobile-nav__logo-img" src="img/daikin-logo.svg" alt="Daikin">
+            </a>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link  js-scroll-split-mobile" href="#split-cards">Сплит-системы</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link  js-scroll-mult-mobile" href="#multi-system">Мультисистемы</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link  js-scroll-aircleaner-mobile" href="#aircleaner">Очиститель воздуха</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link js-scroll-mobile-control-mobile" href="#mobile-control">Мобильное управление</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link  js-scroll-my-comfort-mobile" href="#my-comfort">Программа обслуживания<br>
+                  «Мой комфорт+»</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link  js-scroll-climat-online-mobile" href="#climat-online">Программа обслуживания<br>
+                  «Климат онлайн»</a>
+              </li>
+            </ul>
+            <p class="mobile-nav__contact">
+              Позвоните нам<br>
+              <a class="mobile-nav__phone" href="tel:+74953745713">+7 (495) 374-57-13</a>
+            </p>
+            <a class="mobile-nav__dealers  button" href="#">Найти дилера</a>
+          </div>
+          <div class="mobile-nav__underlayer"></div>
+        </nav>
+        <button class="page-header__nav-button"></button>
+      </div>
+      <h1 class="page-header__title">
+        <div class="page-header__line">
+          <span>Техника для идеального</span>
+        </div>
+        <div class="page-header__line">
+          <span>комфорта</span>
+        </div>
+      </h1>
+    </div>
+    <div class="page-header__overlay">
+      <div class="page-header__overlay-item"></div>
+      <div class="page-header__overlay-item"></div>
+      <div class="page-header__overlay-item"></div>
+      <div class="page-header__overlay-item"></div>
+    </div>
+  </header>
+  <main>
+    <section class="banner">
+      <h2 class="visually-hidden">Товары и услуги</h2>
+      <div class="banner__container  swiper-container">
+        <div class="banner__wrapper  swiper-wrapper">
+          <a class="banner__item  banner__item--split  swiper-slide  js-scroll-split-banner" href="#split-cards">
+            <span>Настенные кондиционеры</span>
+            <div class="banner__item-image-box"></div>
+          </a>
+          <a class="banner__item  banner__item--mult  swiper-slide  js-scroll-mult-banner" href="#multi-system">
+            <span>Мультисистемы</span>
+            <div class="banner__item-image-box"></div>
+          </a>
+          <a class="banner__item  banner__item--aircleaner  swiper-slide  js-scroll-aircleaner-banner" href="#aircleaner">
+            <span>Очиститель воздуха</span>
+            <div class="banner__item-image-box"></div>
+          </a>
+          <a class="banner__item  banner__item--program  swiper-slide  js-scroll-program-banner" href="#my-comfort">
+            <span>Программы обслуживания</span>
+            <div class="banner__item-image-box"></div>
+            <div class="banner__d-degree"></div>
+          </a>
+        </div>
+        <div class="banner__prev  swiper-button-prev"></div>
+        <div class="banner__next  swiper-button-next"></div>
+      </div>
+      <div class="banner__overlay">
+        <div class="banner__overlay-item"></div>
+        <div class="banner__overlay-item"></div>
+        <div class="banner__overlay-item"></div>
+        <div class="banner__overlay-item"></div>
+      </div>
+    </section>
+    <section class="split-cards" id="split-cards">
+      <h2 class="visually-hidden">Сплит-системы</h2>
+      <ul class="split-cards__list">
+        <li class="split-cards__item">
+          <p class="split-cards__name  split-cards__name--main">Sensira FTXB/RXB</p>
+          <p class="split-cards__desc  split-cards__desc--main">
+            Лидер продаж среди кондиционеров Daikin
+          </p>
+          <p class="split-cards__price  split-cards__price--main">от 47 820 &#8381;</p>
+          <div class="split-cards__bottom">
+            <a class="split-cards__buy-link  button" href="#">Купить</a>
+            <a class="split-cards__about-link  arrow-link" href="#">Подробнее</a>
+          </div>
+        </li>
+        <li class="split-cards__item">
+          <p class="split-cards__name">Sensira FTXF/RXF</p>
+          <p class="split-cards__desc">
+            Новинка. Классическая универсальная модель. Экологичный хладагент.
+          </p>
+          <p class="split-cards__price">от 55 990 &#8381;</p>
+          <a class="split-cards__buy-link  button" href="#">Купить</a>
+        </li>
+        <li class="split-cards__item">
+          <p class="split-cards__name">Perfera FTXM/RXM</p>
+          <p class="split-cards__desc">
+            Кондиционер с интенсивной очисткой воздуха.
+          </p>
+          <p class="split-cards__price">от 95 170 &#8381;</p>
+          <div class="split-cards__bottom">
+            <a class="split-cards__buy-link  button" href="#">Купить</a>
+            <a class="split-cards__about-link  arrow-link" href="#">Подробнее</a>
+          </div>
+        </li>
+        <li class="split-cards__item">
+          <p class="split-cards__name">Emura FTXJ/RXJ</p>
+          <p class="split-cards__desc">
+            Элегантный и утонченный корпус. Высший класс энергоэффективности и экологичный хладагент.
+          </p>
+          <p class="split-cards__price">от 116 220 &#8381;</p>
+         <div class="split-cards__bottom">
+            <a class="split-cards__buy-link  button" href="#">Купить</a>
+            <a class="split-cards__about-link  arrow-link" href="#">Подробнее</a>
+         </div>
+        </li>
+        <li class="split-cards__item">
+          <p class="split-cards__name">Emura FTXG/RXG</p>
+          <p class="split-cards__desc">
+            Действительно красивый кондиционер и передовые технологии.
+          </p>
+          <p class="split-cards__price">от 116 220 &#8381;</p>
+          <div class="split-cards__bottom">
+            <a class="split-cards__buy-link  button" href="#">Купить</a>
+            <a class="split-cards__about-link  arrow-link" href="#">Подробнее</a>
+          </div>
+        </li>
+        <li class="split-cards__item">
+          <p class="split-cards__name">Perfera FTXS/RXS</p>
+          <p class="split-cards__desc">
+            Самый тихий кондиционер.
+          </p>
+          <p class="split-cards__price">от 92 950 &#8381;</p>
+          <div class="split-cards__bottom">
+            <a class="split-cards__buy-link  button" href="#">Купить</a>
+            <a class="split-cards__about-link  arrow-link" href="#">Подробнее</a>
+          </div>
+        </li>
+        <li class="split-cards__item">
+          <p class="split-cards__name">Comfora FTXP/RXP</p>
+          <p class="split-cards__desc">
+            Высокая эффективность и комфорт. Экологичный хладагент.
+          </p>
+          <p class="split-cards__price">от 72 370 &#8381;</p>
+          <div class="split-cards__bottom">
+            <a class="split-cards__buy-link  button" href="#">Купить</a>
+            <a class="split-cards__about-link  arrow-link" href="#">Подробнее</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="split-slider">
+      <h2 class="split-slider__title">Выберите свой Daikin</h2>
+      <div class="split-slider__container  swiper-container">
+        <div class="split-slider__wrapper  swiper-wrapper">
+          <div class="split-slider__item  swiper-slide">
+            <p class="split-slider__name">Perfera FTXM/RXM</p>
+            <p>Инверторная технология</p>
+            <p>Хладагент R32</p>
+            <p>Класс сезонной энергоэффективности «А+++»</p>
+            <p>Бесшумная работа<br>
+              от 19 дБА</p>
+            <p>
+              Многоступенчатая очистка воздуха: титано-апатитовый дезодорирующий фильтр и устройство Flash Streamer
+            </p>
+            <a class="split-slider__buy-link  button" href="#">КУПИТЬ от 95 170 ₽</a>
+            <a class="split-slider__about-link  arrow-link" href="#">Подробнее</a>
+          </div>
+          <div class="split-slider__item  swiper-slide">
+            <p class="split-slider__name">Emura FTXG/RXG</p>
+            <p>Инверторная технология</p>
+            <p>Хладагент R-410A</p>
+            <p>Класс сезонной энергоэффективности «А+++»</p>
+            <p>Бесшумная работа<br>
+              от 19 дБА</p>
+            <p>
+              Многоступенчатая очистка воздуха: титано-апатитовый дезодорирующий фильтр
+            </p>
+            <a class="split-slider__buy-link  button" href="#">КУПИТЬ от 116 220 ₽</a>
+            <a class="split-slider__about-link  arrow-link" href="#">Подробнее</a>
+          </div>
+          <div class="split-slider__item  swiper-slide">
+            <p class="split-slider__name">Emura FTXJ/RXJ</p>
+            <p>Инверторная технология</p>
+            <p>Хладагент R32</p>
+            <p>Класс сезонной энергоэффективности «А+++»</p>
+            <p>Бесшумная работа<br>
+              от 19 дБА</p>
+            <p>
+              Многоступенчатая очистка воздуха: противоалергенный фильтр с ионами серебра
+            </p>
+            <a class="split-slider__buy-link  button" href="#">КУПИТЬ от 116 220 ₽</a>
+            <a class="split-slider__about-link  arrow-link" href="#">Подробнее</a>
+          </div>
+          <div class="split-slider__item  swiper-slide">
+            <p class="split-slider__name">Comfora FTXP/RXP</p>
+            <p>Инверторная технология</p>
+            <p>Хладагент R32</p>
+            <p>Класс сезонной энергоэффективности «А++»</p>
+            <p>Бесшумная работа<br>
+              от 20 дБА</p>
+            <p>
+              Многоступенчатая очистка воздуха: титано-апатитовый дезодорирующий фильтр
+            </p>
+            <a class="split-slider__buy-link  button" href="#">КУПИТЬ от 72 370 ₽</a>
+            <a class="split-slider__about-link  arrow-link" href="#">Подробнее</a>
+          </div>
+          <div class="split-slider__item  swiper-slide">
+            <p class="split-slider__name">Perfera FTXS/RXS</p>
+            <p>Инверторная технология</p>
+            <p>Хладагент R410A</p>
+            <p>Класс сезонной энергоэффективности «А++»</p>
+            <p>Бесшумная работа<br>
+              от 19 дБА</p>
+            <p>
+              Многоступенчатая очистка воздуха: титано-апатитовый дезодорирующий фильтр
+            </p>
+            <a class="split-slider__buy-link  button" href="#">КУПИТЬ от 92 950 ₽</a>
+            <a class="split-slider__about-link  arrow-link" href="#">Подробнее</a>
+          </div>
+          <div class="split-slider__item  swiper-slide">
+            <p class="split-slider__name">Sensira FTXF/RXF</p>
+            <p>Инверторная технология</p>
+            <p>Хладагент R32</p>
+            <p>Класс сезонной энергоэффективности «А++»</p>
+            <p>Бесшумная работа<br>
+              от 20 дБА</p>
+            <p>
+              Многоступенчатая очистка воздуха: титано-апатитовый дезодорирующий фильтр
+            </p>
+            <a class="split-slider__buy-link  button" href="#">КУПИТЬ от 55 990 ₽</a>
+            <a class="split-slider__about-link  arrow-link" href="#">Подробнее</a>
+          </div>
+          <div class="split-slider__item  swiper-slide">
+            <p class="split-slider__name">Sensira FTXB/RXB</p>
+            <p>Инверторная технология</p>
+            <p>Хладагент R410A</p>
+            <p>Класс сезонной энергоэффективности «А+»</p>
+            <p>Бесшумная работа<br>
+              от 21 дБА</p>
+            <p>
+              Многоступенчатая очистка воздуха: титано-апатитовый дезодорирующий фильтр
+            </p>
+            <a class="split-slider__buy-link  button" href="#">КУПИТЬ от 47 820 ₽</a>
+            <a class="split-slider__about-link  arrow-link" href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="split-slider__prev  swiper-button-prev"></div>
+        <div class="split-slider__next  swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="programs  programs--my-comfort" id="my-comfort">
+      <h2 class="programs__title">Программы обслуживания</h2>
+      <b class="programs__slogan">
+        Хотите, чтобы кондиционер служил вечно? Программа
+        «Мой&nbsp;комфорт+»
+      </b>
+      <p class="programs__desc">
+        Официальный дистрибьютор Daikin компания «Даичи» предлагает программу премиального обслуживания «Мой комфорт+». Оформив подписку на программу, вы получаете гарантию бесконечного срока службы вашего кондиционера. Если по причине естественного износа или заводского брака кондиционер даст сбой, то блок кондиционера или его часть заменят бесплатно независимо от срока службы устройства. В услугу входит мониторинг работы климатической техники специалистами инженерного центра «Даичи» и ежегодное техническое обслуживание. Любая неисправность будет устраняться в течение 48 часов. Кроме того, вам всегда будет доступен ассистент, который по телефону проконсультирует вас по всем вопросам о кондиционере.
+      </p>
+      <a class="programs__link  arrow-link" href="#">Подробнее о программе «Мой&nbsp;комфорт+»</a>
+    </section>
+    <section class="mobile-control" id="mobile-control">
+      <h2 class="mobile-control__title">Мобильное управление</h2>
+      <p class="mobile-control__desc">
+        Загружайте приложения «Даичи» из App Store или Google Play и ваш телефон превратится в центральный интеллектуальный пульт управления всей системой кондиционирования дома. Помимо стандартного управления кондиционером приложение Daichi Comfort предлагает расширенный функционал, позволяющий «обучить» климатическую систему всего дома индивидуальным предпочтениям владельца.
+      </p>
+      <a class="mobile-control__link  arrow-link" href="#">Узнать подробнее</a>
+    </section>
+    <section class="daichi-comfort">
+      <h2 class="daichi-comfort__title">Приложение Daichi Comfort</h2>
+      <a class="daichi-comfort__appstore-link" href="#"></a>
+      <a class="daichi-comfort__googleplay-link" href="#"></a>
+    </section>
+    <section class="programs  programs--climat-online" id="climat-online">
+      <h2 class="programs__title">Программы обслуживания</h2>
+      <b class="programs__slogan">
+        Удаленный мониторинг работы кондиционера. Программа обслуживания «Климат онлайн»
+      </b>
+      <p class="programs__desc">
+        Установите во внутренний блок сплит&#8209;системы специальный контроллер Daichi DW01 и доверьте заботу об исправной работе кондиционера инженерному центру «Даичи». Инженерный центр первым узнает о неисправности или сбое в работе кондиционера, оперативно предупредит владельца и предложит необходимый ремонт или техническое обслуживание.
+      </p>
+      <a class="programs__link  arrow-link" href="#">Подробнее о программе
+        «Климат&nbsp;онлайн»</a>
+    </section>
+    <section class="multi-system" id="multi-system">
+      <h2 class="multi-system__title">Мультисистемы Daikin</h2>
+      <p class="multi-system__desc">
+        Мультисистема состоит из одного внешнего и нескольких внутренних блоков. В нашем магазине вы можете приобрести все составляющие мультисистемы.
+      </p>
+      <div class="multi-system__model  multi-system__model--mxm">
+        <p class="multi-system__model-title">Мультисистема</p>
+        <p class="multi-system__name">Daikin MXM</p>
+        <p class="multi-system__price">от 147 238 &#8381;</p>
+        <a class="multi-system__buy-link  button" href="#">Купить</a>
+      </div>
+      <div class="multi-system__model  multi-system__model--mxs">
+        <p class="multi-system__model-title">Мультисистема</p>
+        <p class="multi-system__name">Daikin MXS</p>
+        <p class="multi-system__price">от 147 238 &#8381;</p>
+        <a class="multi-system__buy-link  button" href="#">Купить</a>
+      </div>
+      <div class="multi-system__select">
+        <p class="multi-system__select-title">Как подобрать?</p>
+        <p class="multi-system__select-desc">
+          Подбор мультисистемы необходимо проводить заранее, исходя из параметров конкретного кондиционируемого помещения.<br><br>
+          Для правильного подбора мультисистемы мы рекомендуем обращаться в профессиональные климатические компании или к проектировщикам систем кондиционирования.
+        </p>
+      </div>
+    </section>
+    <section class="aircleaner" id="aircleaner">
+      <div class="aircleaner__promo">
+        <h2 class="aircleaner__title">Очиститель воздуха MC70L</h2>
+        <p class="aircleaner__streamer">
+          Высокоэффективная очистка воздуха с технологией Flash Streamer
+        </p>
+        <p class="aircleaner__price">61 870 &#8381;</p>
+        <a class="aircleaner__buy-link  button" href="#">Купить</a>
+        <a class="aircleaner__about  arrow-link" href="#">Подробнее</a>
+      </div>
+      <div class="aircleaner__benefits">
+        <p class="aircleaner__desc">
+          Очищает воздух от пыли и запахов, борется
+          с&nbsp;аллергенами, плесенью и микробами
+        </p>
+        <ul class="aircleaner__benefits-list">
+          <li>
+            Очистка воздуха от аллергенов и&nbsp;вредных
+            микроорганизмов с технологией Flash Streamer
+          </li>
+          <li>
+            6 стадий очистки воздуха
+          </li>
+          <li>
+            Бесшумная работа очистителя — от&nbsp;16&nbsp;дБА
+          </li>
+          <li>
+            Расход воздуха в режиме TURBO до&nbsp;420&nbsp;м³/ч
+          </li>
+          <li>
+            Инверторная технология
+          </li>
+          <li>
+            Экономия электроэнергии
+          </li>
+          <li>
+            Таймер выключения
+          </li>
+        </ul>
+      </div>
+      <div class="aircleaner__stages">
+        <p class="aircleaner__stages-title">6 стадий очистки воздуха</p>
+        <div class="aircleaner__container  swiper-container">
+          <ul class="aircleaner__stages-list  swiper-wrapper">
+            <li class="aircleaner__stages-item  swiper-slide">
+              <p class="aircleaner__stages-name">Flash Streamer</p>
+              <p class="aircleaner__stages-desc">
+                В результате стримерного разряда генерируются быстрые электроны, которые разлагают запахи, аллергены и вредные микроорганизмы, а затем удаляют&nbsp;их.
+              </p>
+            </li>
+            <li class="aircleaner__stages-item  swiper-slide">
+              <p class="aircleaner__stages-name">Предварительный фильтр</p>
+              <p class="aircleaner__stages-desc">
+                Задерживает крупные загрязнения: шерстинки,
+                пыль, копоть.
+              </p>
+            </li>
+            <li class="aircleaner__stages-item  swiper-slide">
+              <p class="aircleaner__stages-name">Плазменный ионизатор</p>
+              <p class="aircleaner__stages-desc">
+                Заряжает мелкие частицы, прошедшие предыдущие стадии очистки
+                электрическим зарядом.
+              </p>
+            </li>
+            <li class="aircleaner__stages-item  swiper-slide">
+              <p class="aircleaner__stages-name">Гофрированный
+                электростатический фильтр</p>
+              <p class="aircleaner__stages-desc">
+                Притягивает заряженные частицы.
+              </p>
+            </li>
+            <li class="aircleaner__stages-item  swiper-slide">
+              <p class="aircleaner__stages-name">Дезодорирующий
+                титано&#8209;апатитовый фильтр</p>
+              <p class="aircleaner__stages-desc">
+                Поглощает запахи.
+              </p>
+            </li>
+            <li class="aircleaner__stages-item  swiper-slide">
+              <p class="aircleaner__stages-name">Каталитический фильтр</p>
+              <p class="aircleaner__stages-desc">
+                Поглощает запахи и разлагает на нейтральные компоненты вредные химические вещества.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="aircleaner__footer">
+        <p class="aircleaner__footer-name">
+          Очиститель воздуха MC70L
+        </p>
+        <p class="aircleaner__footer-price">61 870 &#8381;</p>
+        <a class="aircleaner__buy-link  button" href="#">Купить</a>
+        <a class="aircleaner__about-link  arrow-link  arrow-link--white" href="#">Подробнее</a>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__contact">
+        Остались вопросы?<br>
+        Позвоните нам<br>
+        <a class="page-footer__phone" href="tel:+74953745713">+7 (495) 374-57-13</a>
+    </div>
+    <div class="page-footer__to-dealers">
+      <p class="page-footer__to-dealers-title">Где купить Daikin
+      </p>
+      <a class="page-footer__to-dealers-link  button" href="#">Найти дилера</a>
+    </div>
+  </footer>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
