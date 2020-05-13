@@ -686,6 +686,8 @@ a {
   font-weight: 600;
   font-size: 15px;
   line-height: 17px;
+  color: inherit;
+  text-decoration: none;
 }
 
 @media (max-width: 1399px) {
