@@ -347,7 +347,10 @@ template {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local(""), url("../fonts/suisseintl-regular.otf") format("opentype");
+  src: url("../fonts/suisseintl-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/suisseintl-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/suisseintl-regular.woff") format("woff"), url("../fonts/suisseintl-regular.ttf") format("truetype"), url("../fonts/suisseintl-regular.svg#PlayfairDisplay") format("svg");
+  /* Legacy iOS */
 }
 
 @font-face {
@@ -355,7 +358,10 @@ template {
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: local(""), url("../fonts/suisseintl-semibold.otf") format("opentype");
+  src: url("../fonts/suisseintl-semibold.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/suisseintl-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/suisseintl-semibold.woff") format("woff"), url("../fonts/suisseintl-semibold.ttf") format("truetype"), url("../fonts/suisseintl-semibold.svg#PlayfairDisplay") format("svg");
+  /* Legacy iOS */
 }
 
 *,
